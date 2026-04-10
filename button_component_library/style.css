@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+.button {
+  background-color: hsl(0, 0%, 90%);
+  border: 1px solid hsl(0, 0%, 75%);
+  outline: none;
+  cursor: pointer;
+  padding: 0.5em 1em;
+  border-radius: 0.3em;
+  font-size: 1rem;
+  display: inline-block;
+
+  &:hover,
+  &:focus-visible {
+    background-color: hsl(0, 0%, 80%);
+    box-shadow: 0 0 5px 0 hsl(0, 0%, 75%);
+    border-color: hsl(0, 0%, 70%);
+  }
+
+  &.primary {
+    color: #fff;
+    border-color: hsl(287, 100%, 40%);
+    background-color: hsl(287, 100%, 45%);
+
+    &:hover,
+    &:focus-visible {
+      background-color: hsl(287, 100%, 40%);
+      border-color: hsl(287, 100%, 35%);
+      box-shadow: 0 0 5px 0 hsl(287, 100%, 45%);
+    }
+  }
+
+  &.accent {
+    color: #fff;
+    background-color: hsl(200, 100%, 45%);
+    border-color: hsl(200, 100%, 40%);
+
+    &:hover,
+    &:focus-visible {
+      background-color: hsl(200, 100%, 40%);
+      border-color: hsl(200, 100%, 35%);
+      box-shadow: 0 0 5px 0 hsl(200, 100%, 45%);
+    }
+  }
+
+  &.danger {
+    color: #fff;
+    background-color: hsl(0, 100%, 45%);
+    border-color: hsl(0, 100%, 40%);
+
+    &:hover,
+    &:focus-visible {
+      border-color: hsl(0, 100%, 35%);
+      background-color: hsl(0, 100%, 40%);
+      box-shadow: 0 0 5px 0 hsl(0, 100%, 45%);
+    }
+  }
+
+  &.large {
+    font-size: 2rem;
+  }
+
+  &.small {
+    font-size: 0.75rem;
+  }
+
+  &.pill {
+    border-radius: 999999px;
+  }
+}

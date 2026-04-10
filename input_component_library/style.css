@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+.input {
+  border: 1px solid hsl(0, 0%, 47%);
+  outline: none;
+  font-size: inherit;
+  padding: 0.5em 0.75em;
+  border-radius: 0.2em;
+}
+
+.input:focus-visible {
+  border-color: hsl(186, 100%, 50%);
+  box-shadow: 0 0 5px 0 hsl(186, 100%, 50%);
+}
+
+.input-success {
+  border-color: hsl(121, 100%, 42%);
+}
+
+.input-success:focus-visible {
+  border-color: hsl(121, 100%, 50%);
+  box-shadow: 0 0 5px 0 hsl(121, 100%, 50%);
+}
+
+.input-error {
+  border-color: hsl(0, 100%, 42%);
+}
+
+.input-error:focus-visible {
+  border-color: hsl(0, 100%, 50%);
+  box-shadow: 0 0 5px 0 hsl(0, 100%, 50%);
+}
+
+.input-large {
+  font-size: 1.5rem;
+}
+.input-small {
+  font-size: 0.75rem;
+}
+
+.input:disabled {
+  color: hsl(0, 0%, 50%);
+  background-color: hsl(0, 0%, 95%);
+  border-color: hsl(0, 0%, 80%);
+  cursor: not-allowed;
+}
