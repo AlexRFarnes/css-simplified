@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #181627;
+}
+
+.gallery {
+  margin: 10px;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: 200px;
+  align-items: stretch;
+  grid-auto-flow: dense;
+}
+
+.gallery__img {
+  width: 100%;
+  border: 1px solid #ccc;
+  object-fit: cover;
+}
+
+.wide {
+  grid-column: span 2;
+}
+
+.tall {
+  grid-row: span 2;
+}
